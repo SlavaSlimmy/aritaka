@@ -1,0 +1,39 @@
+// grid 5 columns
+.make-xs-5column(@gutter: @grid-gutter-width) {
+  position: relative;
+  float: left;
+  width: 20%;
+  min-height: 1px;
+  padding-left:  (@gutter / 2);
+  padding-right: (@gutter / 2);
+}
+.make-sm-5column(@gutter: @grid-gutter-width) {
+  position: relative;
+  min-height: 1px;
+  padding-left:  (@gutter / 2);
+  padding-right: (@gutter / 2);
+  @media (min-width: @screen-sm-min) {
+    float: left;
+    width: 20%;
+  }
+}
+.make-md-5column(@gutter: @grid-gutter-width) {
+  position: relative;
+  min-height: 1px;
+  padding-left:  (@gutter / 2);
+  padding-right: (@gutter / 2);
+  @media (min-width: @screen-md-min) {
+    float: left;
+    width: 20%;
+  }
+}
+.make-lg-5column(@gutter: @grid-gutter-width) {
+  position: relative;
+  min-height: 1px;
+  padding-left:  (@gutter / 2);
+  padding-right: (@gutter / 2);
+  @media (min-width: @screen-lg-min) {
+    float: left;
+    width: 20%;
+  }
+}

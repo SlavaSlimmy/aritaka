@@ -1,0 +1,19 @@
+.icon {
+  display: inline-block;
+  vertical-align: middle;
+  background: url(@sprite-url) 0% 0% no-repeat;
+  margin: 0px 10px 2px 0px;
+  &_right {
+    margin: 0px 0px 2px 10px;
+  }
+}
+
+// hover sample
+a:hover,
+div:hover,
+span:hover,
+button:hover {
+  > .icon_favorite {
+    .icon_favorite-hover;
+  }
+}
