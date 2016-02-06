@@ -1985,6 +1985,25 @@ button:hover > .icon_favorite {
   border-right: 6px solid transparent;
   border-left: 6px solid transparent;
 }
+.breadcrumbs {
+  padding: 0px;
+  margin-bottom: 10px;
+  list-style: none;
+  display: block;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #000;
+}
+.breadcrumbs > li {
+  display: inline-block;
+}
+.breadcrumbs > li + li:before {
+  content: "/\00a0";
+  padding: 0 4px;
+  color: #000;
+}
+.breadcrumbs__active {
+  color: #000;
+}
 .icon_favorite-hover {
   background-position: 0px 0px;
   width: 16px;

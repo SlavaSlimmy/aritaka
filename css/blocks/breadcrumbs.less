@@ -1,0 +1,21 @@
+.breadcrumbs {
+  padding: 0px;
+  margin-bottom: 10px;
+  list-style: none;
+  display: block;
+  font-family: @font-family-base;
+  color:@brand-primary;
+
+  > li {
+    display: inline-block;
+
+    + li:before {
+      content: "@{breadcrumb-separator}\00a0";
+      padding: 0 4px;
+      color: @brand-primary;
+    }
+  }
+  &__active {
+    color: @brand-primary;
+  }
+}
