@@ -2004,6 +2004,40 @@ button:hover > .icon_favorite {
 .breadcrumbs__active {
   color: #000;
 }
+.link {
+  color: #373f3e;
+  text-decoration: underline;
+  -webkit-transition: color 200ms ease;
+  -o-transition: color 200ms ease;
+  transition: color 200ms ease;
+}
+.link:hover,
+.link:focus {
+  color: #e36626;
+  text-decoration: none;
+}
+.link:focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.link_dotted {
+  text-decoration: none;
+}
+.link_dotted:hover,
+.link_dotted:focus {
+  text-decoration: none;
+}
+.link_dotted:hover span,
+.link_dotted:focus span {
+  border-bottom: 1px dotted #e36626;
+}
+.link_dotted span {
+  -webkit-transition: border-color 200ms ease;
+  -o-transition: border-color 200ms ease;
+  transition: border-color 200ms ease;
+  border-bottom: 1px dotted #373f3e;
+}
 .icon_favorite-hover {
   background-position: 0px 0px;
   width: 16px;

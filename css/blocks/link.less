@@ -1,0 +1,29 @@
+.link {
+  color: @alt-link-color;
+  text-decoration: underline;
+  .transition(color @trans-time @trans-anim);
+  &:hover,
+  &:focus {
+    color: @alt-link-hover-color;
+    text-decoration: @alt-link-hover-decoration;
+  }
+
+  &:focus {
+    .tab-focus();
+  }
+
+  &_dotted {
+    text-decoration: none;
+    &:hover,
+    &:focus {
+      text-decoration: none;
+      span {
+        border-bottom: 1px dotted @alt-link-hover-color;
+      }
+    }
+    span {
+      .transition(border-color @trans-time @trans-anim);
+      border-bottom: 1px dotted @alt-link-color;
+    }
+  }
+}
