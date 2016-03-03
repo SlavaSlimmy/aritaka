@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Gochi+Hand' rel='stylesheet' type='text/css'>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Aritaka forms</title>
+
+    <link href="../css/main.css" rel="stylesheet" type="text/css" media="screen"/>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+
+            <div class="nav-menu">
+                <a href="/" class="logo logo_left">ARITAKA</a>
+                <ul class="nav-menu__wrapper nav-menu__wrapper_hidden">
+                    <li class="nav-menu__item nav-menu__item_active"><a href="#" class="nav-menu__link">Главная</a></li>
+                    <li class="nav-menu__item"><a href="#" class="nav-menu__link">Новости</a></li>
+                    <li class="nav-menu__item dropdown">
+                        <a href="#" class="nav-menu__link" data-dropdown-id="dd-catalog" data-toggle="dropdown">Каталог<i class="caret"></i></a>
+                        <ul class="dropdown__menu" id="dd-catalog">
+                            <li><a href="" class="dropdown__link">Каталог 1</a></li>
+                            <li><a href="" class="dropdown__link">Каталог 2</a></li>
+                            <li><a href="" class="dropdown__link">Каталог 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-menu__item"><a href="#" class="nav-menu__link">Контакты</a></li>
+                    <li class="nav-menu__item"><a href="#" class="nav-menu__link">О нас</a></li>
+                    <li class="nav-menu__item dropdown">
+                        <a href="#" class="nav-menu__link" data-dropdown-id="dd-more" data-toggle="dropdown">Еще<i class="caret"></i></a>
+                        <ul class="dropdown__menu" id="dd-more">
+                            <li><a href="" class="dropdown__link">Страница 1</a></li>
+                            <li><a href="" class="dropdown__link">Страница 2</a></li>
+                            <li><a href="" class="dropdown__link">Страница 3</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <a class="nav-menu__toggle" href="#">&#9776;</a>
+            </div>
+        </div>
+    </div>
+    <div class="page">
+        <div class="container">
+            <h1>BEM (with some edited mixins and components from Twitter Bootstrap)</h1>
+            <ul class="breadcrumbs">
+                <li><a href="">Главная</a></li>
+                <li><a href="">Блоки</a></li>
+                <li class="breadcrumbs__active">Формы</li>
+            </ul>
+            <h2>Поиск</h2>
+            <div class="search">
+                <form action="">
+                    <div class="search__group">
+                        <input type="search" class="form-control search__form-control" placeholder="Поиск" />
+                        <span class="search__btn-block">
+                            <button type="submit" class="btn btn_info search__btn"><span>Найти</span></button>
+                        </span>
+                    </div>
+                </form>
+            </div>
+
+            <h2>Форма</h2>
+            <div class="form form_horizontal">
+                <form action="">
+                    <div class="form-group">
+                        <label class="form__label">Email</label>
+                        <div class="form__control">
+                            <input type="text" class="form-control" placeholder="Email" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="form__label">Password</label>
+                        <div class="form__control">
+                            <input type="password" class="form-control" placeholder="Password" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="form__label">Checkboxes</label>
+                        <div class="form__control">
+                            <div class="checkbox"><label><input type="checkbox" />checkbox</label></div>
+                            <div class="checkbox checkbox_inline"><label><input type="checkbox" />checkbox1</label></div>
+                            <div class="checkbox checkbox_inline"><label><input type="checkbox" />checkbox2</label></div>
+                        </div>
+                    </div>
+                    <div class="form-group form__error">
+                        <label class="form__label">Input</label>
+                        <div class="form__control">
+                            <input type="text" class="form-control" placeholder="Input" />
+                            <div class="form__error-text">Описание ошибки поля формы.</div>
+                        </div>
+                    </div>
+                    <div class="form-group form__success">
+                        <label class="form__label">Input</label>
+                        <div class="form__control">
+                            <input type="text" class="form-control" placeholder="Input" />
+                            <div class="form__help-block">Допольнительный текст, описывающий поле формы.</div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="form__label">Radios</label>
+                        <div class="form__control">
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" checked value="option1" id="optionsRadios1" name="optionsRadios" />
+                                    Option one
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" value="option2" id="optionsRadios2" name="optionsRadios" />
+                                    Option two
+                                </label>
+                            </div>
+
+                            <div class="radio radio_inline">
+                                <label>
+                                    <input type="radio" value="option2" id="optionsRadios3" name="optionsRadios" />
+                                    Option three inline
+                                </label>
+                            </div>
+                            <div class="radio radio_inline">
+                                <label>
+                                    <input type="radio" value="option2" id="optionsRadios4" name="optionsRadios" />
+                                    Option four inline
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="form__label">Select</label>
+                        <div class="form__control">
+                            <select class="form-control">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="form__label">Textarea</label>
+                        <div class="form__control">
+                            <textarea class="form-control" rows="3"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form__buttons">
+                            <button class="btn btn_danger" type="reset">Cancel</button>
+                            <button class="btn btn_success" type="submit">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container"><a href="/" class="logo">ARITAKA</a></div>
+    </div>
+
+
+    <!-- scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="../js/nav-menu.js"></script>
+    <script src="../js/dropdown.js"></script>
+    <script src="../js/tooltip.js"></script>
+</body>
+</html>
