@@ -1,0 +1,31 @@
+.radio {
+  position: relative;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  label {
+    min-height: @line-height-computed; // Ensure the input doesn't jump when there is no text
+    padding-left: 20px;
+    margin-bottom: 0;
+    font-weight: normal;
+    cursor: pointer;
+  }
+
+  input[type="radio"] {
+    position: absolute;
+    margin-left: -20px;
+    margin-top: 3px;
+    margin-top: 4px \9;
+  }
+
+  &_inline {
+    position: relative;
+    display: inline-block;
+    padding-right: 20px;
+    margin-bottom: 0;
+    vertical-align: middle;
+    font-weight: normal;
+    cursor: pointer;
+  }
+}

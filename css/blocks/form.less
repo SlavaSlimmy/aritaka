@@ -1,0 +1,50 @@
+.form {
+
+  &__help-block {
+    font-size: @font-size-small;
+    margin: 5px 0px 0px 1px;
+  }
+
+  &__success {
+    .form-control-validation(@state-success-text; @state-success-text; @state-success-bg);
+  }
+
+  &__error {
+    .form-control-validation(@state-danger-text; @state-danger-text; @state-danger-bg);
+  }
+  &__error-text {
+    font-size: @font-size-small;
+    margin: 5px 0px 0px 1px;
+  }
+
+  // Horizontal forms
+  //
+  // Horizontal forms are built on grid classes and allow you to create forms with
+  // labels on the left and inputs on the right.
+  &_horizontal {
+    .form-group {
+      .make-row();
+      .clearfix();
+    }
+    .form__label {
+      .make-lg-column(2);
+      text-align: right;
+      padding-top: (@padding-base-vertical + 1); // Default padding plus a border
+    }
+    .form__control {
+      .make-lg-column(10);
+    }
+    .form__buttons {
+      .make-lg-column(10);
+      .make-lg-column-offset(2);
+    }
+    .radio,
+    .checkbox {
+      margin-top: 0;
+      margin-bottom: 0;
+      padding-top: (@padding-base-vertical + 1); // Default padding plus a border
+      min-height: (@line-height-computed + (@padding-base-vertical + 1));
+    }
+
+  }
+}
